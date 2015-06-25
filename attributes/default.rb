@@ -163,6 +163,8 @@ default['opennms']['properties']['geo']['referrer']       = "http://localhost/"
 default['opennms']['properties']['geo']['min_quality']    = "ZIP"
 default['opennms']['properties']['geo']['email']          = ""
 default['opennms']['properties']['geo']['tile_url']       = "http://otile1.mqcdn.com/tiles/1.0.0/osm/${z}/${x}/${y}.png"
+# JMS NBI
+default['opennms']['properties']['jms_nbi']['broker_url'] = 'vm://localhost'
 # access point monitor
 default['opennms']['apm']['threads']           = 30
 default['opennms']['apm']['pscan_interval']    = 1800000

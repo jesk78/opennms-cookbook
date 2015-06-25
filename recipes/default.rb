@@ -248,7 +248,8 @@ template "#{onms_home}/etc/opennms.properties" do
     :referrer                       => node['opennms']['properties']['geo']['referrer'],
     :min_quality                    => node['opennms']['properties']['geo']['min_quality'],
     :email                          => node['opennms']['properties']['geo']['email'],
-    :tile_url                       => node['opennms']['properties']['geo']['tile_url']
+    :tile_url                       => node['opennms']['properties']['geo']['tile_url'],
+    :jms_nbi_broker_url             => node['opennms']['properties']['jms_nbi']['broker_url']
   )
 end
 
