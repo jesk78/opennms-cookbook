@@ -1872,3 +1872,13 @@ default['opennms']['xmpp']['truststore_password'] = nil
 default['opennms']['xmpp']['debug']               = nil
 default['opennms']['xmpp']['user']                = nil
 default['opennms']['xmpp']['pass']                = nil
+
+# jms-northbounder-configuration.xml
+default['opennms']['jms_nbi']['enabled']                = false
+default['opennms']['jms_nbi']['nagles_delay']           = 1000
+default['opennms']['jms_nbi']['batch_size']             = 100
+default['opennms']['jms_nbi']['queue_size']             = 300000
+default['opennms']['jms_nbi']['message_format']         = 'ALARM ID:${alarmId} NODE:${nodeLabel}; ${logMsg}'
+default['opennms']['jms_nbi']['jms_destination']        = 'SingleAlarmQueue'
+default['opennms']['jms_nbi']['send_as_object_message'] = false
+default['opennms']['jms_nbi']['first_occurence_only']   = true
