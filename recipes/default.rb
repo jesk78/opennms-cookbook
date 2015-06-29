@@ -95,7 +95,8 @@ if node['opennms']['stable']
     action :install
   end
 else
-  package onms_packages do
+  yum_package onms_packages do
+    timeout 3200
     allow_downgrade node['opennms']['allow_downgrade']
     action :install
   end
