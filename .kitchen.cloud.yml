@@ -25,6 +25,10 @@ platforms:
                   "opennms": {
                               "conf": {"start_timeout": 20},
                               "stable": false
+                              "plugin": {
+                                         "xml": true,
+                                         "nsclient": true
+                                        },
                               },
                   "postgresql": {
                                 "password": { 
