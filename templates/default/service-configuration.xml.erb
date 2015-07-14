@@ -298,14 +298,6 @@ maintained
       <invoke method="status" pass="0" at="status"/>
       <invoke method="stop" pass="0" at="stop"/>
    </service>
-   <service enabled="false">
-      <name>OpenNMS:Name=Linkd</name>
-      <class-name>org.opennms.netmgt.linkd.jmx.Linkd</class-name>
-      <invoke method="init" pass="0" at="start"/>
-      <invoke method="start" pass="1" at="start"/>
-      <invoke method="status" pass="0" at="status"/>
-      <invoke method="stop" pass="0" at="stop"/>
-   </service>
    <service enabled="<%=@correlator%>">
       <name>OpenNMS:Name=Correlator</name>
       <class-name>org.opennms.netmgt.correlation.jmx.Correlator</class-name>

@@ -12,11 +12,11 @@ default['yum']['opennms-snapshot-rhel6']['baseurl']         = "http://yum.opennm
 default['yum']['opennms-snapshot-rhel6']['failovermethod']  = "roundrobin"
 default['build-essential']['compile_time'] = true
 default['opennms']['default_template_cookbook'] = 'opennms'
-default['opennms']['version'] = '15.0.2-1'
+default['opennms']['version'] = '17.0.0-0.20150714.1'
 default['opennms']['allow_downgrade'] = false
-default['opennms']['stable'] = true
+default['opennms']['stable'] = false
 # whether or not to attempt to automatically upgrade opennms
-default['opennms']['upgrade'] = false
+default['opennms']['upgrade'] = true
 # whether or not to include the plugin packages
 default['opennms']['plugin']['xml'] = false
 default['opennms']['plugin']['nsclient'] = false
