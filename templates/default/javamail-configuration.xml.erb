@@ -49,9 +49,8 @@
   <readmail-config name="<%=@default_read_config_name%>" 
                    attempt-interval="<%=@dr_attempt_interval%>" delete-all-mail="<%=@dr_delete_all_mail%>" mail-folder="<%=@dr_mail_folder%>" 
                    debug="<%=@dr_debug%>" >
-<% @dr_properties.each do |n,v| -%>
-    <javamail-property name="<%=n%>" value="<%=v%>"/>
-<% end -%>
+    <javamail-property name="mail.pop3.apop.enable" value="<%=@dr_properties['mail.pop3.apop.enable']%>"/>
+    <javamail-property name="mail.pop3.rsetbeforequit" value="<%=@dr_properties['mail.pop3.rsetbeforequit']%>" />
     <readmail-host host="<%=@dr_host%>" port="<%=@dr_port%>">
       <readmail-protocol ssl-enable="<%=@dr_ssl_enable%>" start-tls="<%=@dr_start_tls%>"
                          transport="<%=@dr_transport%>"/>
