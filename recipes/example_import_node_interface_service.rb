@@ -15,7 +15,7 @@ opennms_import_node "serviceNode" do
   foreign_id serviceNode_foreign_id
   building "HQ"
   categories ["Servers", "Test"]
-  assets 'vendorphone' => '411', 'serialnumber' => 'SN12838932'
+  assets 'vendorPhone' => '411', 'serialNumber' => 'SN12838932'
 end
 
 # minimal
