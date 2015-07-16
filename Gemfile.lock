@@ -43,6 +43,7 @@ GEM
     celluloid-io (0.16.0.pre)
       celluloid (>= 0.16.0.pre)
       nio4r (>= 1.0.0)
+    chef-rewind (0.0.9)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
     dep-selector-libgecode (1.0.1)
@@ -183,6 +184,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.6)
+    vagrant-wrapper (2.0.2)
     varia_model (0.3.2)
       buff-extensions (~> 0.2)
       hashie (>= 2.0.2)
@@ -198,6 +200,7 @@ PLATFORMS
 
 DEPENDENCIES
   berkshelf
+  chef-rewind
   kitchen-digitalocean
   kitchen-ec2
   kitchen-openstack (= 1.6.0)
@@ -205,3 +208,4 @@ DEPENDENCIES
   rake
   rvm
   test-kitchen (~> 1.0)
+  vagrant-wrapper
